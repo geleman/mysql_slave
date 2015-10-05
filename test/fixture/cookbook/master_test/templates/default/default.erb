@@ -1,0 +1,8 @@
+#test settings
+
+[mysqld]
+log-bin = /var/log/mysql-master/mysql-bin
+relay-log = /var/log/mysql-master/relay-bin
+binlog-format = ROW
+log-slave-updates
+server_id = <%= @server_id %>
